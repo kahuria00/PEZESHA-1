@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Login Here</title>
+</head>
+<body>
+
+	<div class="container bg-transparent w-50">
+		<h3> Login </h3>
+		<div class="col-md-5">
+	<form method="POST"> {% csrf_token %}
+		{{form.as_p}}
+	<button type="Submit" class="bg-success col-md-4">Login</button>
+   </form>
+    </div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Edit details</title>
+</head>
+<body>
+
+	<div class="container bg-light w-50 mt-5">
+		<h3> Edit Details </h3>
+	<div class="col-md-5">
+	<form method="POST">{% csrf_token  %}
+		{{form.as_p}}
+
+		<button type="submit" class="bg-success col-md-5">Edit</button>
+	</form>
+
+
+</div>
+</div>
+</body>
+</html>
